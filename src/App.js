@@ -1,10 +1,15 @@
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
-   <>
-   Testingapp
-   </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage/>} />       
+      </Routes>
+    </Router>
   );
 }
 
