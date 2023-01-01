@@ -3,7 +3,7 @@ export const sliderDataOne = {
   desc: "Crpyto site landing page",
   skillOne: "REACT",
   skillTwo: "CSS",
-  gitlink: "https://github.com/Silverfangs9/CryptoSiteLandingPage",
+  gitlink: "https://scoinlandingpage.netlify.app",
   linkBg: "white",
 };
 export const sliderDataTwo = {
@@ -11,7 +11,7 @@ export const sliderDataTwo = {
   desc: "E-Commerce landing page",
   skillOne: "HTML",
   skillTwo: "CSS",
-  gitlink: "https://github.com/Silverfangs9/E-CommeceSite",
+  gitlink: "https://silverstores.netlify.app",
   linkBg: "white",
 };
 export const sliderDataThree = {
