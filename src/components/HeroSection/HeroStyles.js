@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../MediaQuery/Responsive";
 
 export const HeroContainer = styled.div`
   background-color: black;
@@ -20,8 +21,8 @@ export const HeroContainer = styled.div`
     bottom: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.9) 80%
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 1) 80%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
     z-index: 2;
@@ -73,6 +74,11 @@ export const HeroH1 = styled.h1`
   justify-content: flex-start;
   text-shadow: 5px 5px 10px #356489;
   font-weight: 500;
+
+  ${mobile({
+    fontSize: "40px",
+    width: "500px",
+  })}
 `;
 export const HeroName = styled.span`
   width: 100%;

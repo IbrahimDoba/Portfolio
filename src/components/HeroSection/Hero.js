@@ -1,21 +1,17 @@
 import React from "react";
 import codevideo from "../../videos/codevid.mp4";
 import {
-  Animation,
-  DownBtn,
   HeroBg,
   HeroContainer,
   HeroContent,
-  HeroDownBtnrapper,
   HeroH1,
   HeroName,
-  HeroP,
   VideoBg,
 } from "./HeroStyles";
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={codevideo} type="video/mp4" />
       </HeroBg>
@@ -24,9 +20,9 @@ const Hero = () => {
         <HeroH1>FRONTEND-DEVELOPER</HeroH1>
         <HeroName>IBRAHIM DOBA </HeroName>
       </HeroContent>
-      <HeroDownBtnrapper>
+      {/* <HeroDownBtnrapper>
         <DownBtn />
-      </HeroDownBtnrapper>
+      </HeroDownBtnrapper> */}
     </HeroContainer>
   );
 };
