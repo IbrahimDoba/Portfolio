@@ -16,13 +16,10 @@ const Hero = () => {
         <VideoBg autoPlay loop muted src={codevideo} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        {/* <HeroP>Hello 👋 I'm </HeroP> */}
         <HeroH1>FRONTEND-DEVELOPER</HeroH1>
         <HeroName>IBRAHIM DOBA </HeroName>
       </HeroContent>
-      {/* <HeroDownBtnrapper>
-        <DownBtn />
-      </HeroDownBtnrapper> */}
+      
     </HeroContainer>
   );
 };
