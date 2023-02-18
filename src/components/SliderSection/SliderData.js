@@ -42,7 +42,7 @@ export const sliderDataFive = {
   gitlink: "silvermoviesite.netlify.app",
   skills1: "React", 
   skills2: "Styled-Comp", 
-  skills3: "Rest Api", 
+  skills3: "", 
   skills4: "", 
   skills5: "", 
 };

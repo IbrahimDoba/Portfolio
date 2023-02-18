@@ -24,8 +24,8 @@ const Contact = () => {
           <SpanTag>
             Hi! My name is Ibrahim Doba and I'm a Intermediate frontend developer
             with a passion for creating user-friendly and visually appealing
-            websites. I have experience with HTML, CSS, JavaScript, tailwind, firebase and various
-            frontend frameworks such as React and Vue.js. <p /> I'm constantly
+            websites. I have experience with HTML, CSS, JavaScript, tailwind, firebase and
+            frontend frameworks such as React.  <p /> I'm constantly
             learning and experimenting with new technologies to improve my
             skills and stay up-to-date with the latest trends in web
             development.<p/> In my free time, I enjoy exploring new design concepts

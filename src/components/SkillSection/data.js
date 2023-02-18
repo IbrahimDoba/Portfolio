@@ -47,7 +47,7 @@ export const skillss = [
     },
     {
         id: 8,
-        img: require("../../images/github.png") ,
-        titles: "GITHUB",
+        img: require("../../images/git.png") ,
+        titles: "GIT",
     },
 ]
