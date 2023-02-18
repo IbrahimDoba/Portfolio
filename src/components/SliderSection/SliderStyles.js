@@ -9,8 +9,8 @@ export const SliderContainers = styled.div`
 `;
 export const Arrow = styled.div`
   height: 50px;
-  width: 50px;
-  background-color: white;
+  width: 200px;
+  background-color: transparent;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -120,10 +120,11 @@ export const BtnWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 50%;
 `;
 export const SButton = styled.button`
   padding: 15px;
-  margin: 20px 15px;
+  margin: 10px 15px;
   border-radius: 10px;
   border: none;
   background-color: black;

@@ -29,7 +29,7 @@ const SingleSkill = () => {
   return (
     
   <Container id="skills">  
-    <SkillsH1>SKILLS</SkillsH1>
+    <SkillsH1>TECH STACK</SkillsH1>
         <ContainerSkills>
       {skillss.map((EachSkill) => (
         <Skills EachSkill={EachSkill} key={EachSkill.id} />

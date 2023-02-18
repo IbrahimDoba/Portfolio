@@ -55,7 +55,7 @@ export const HeroContent = styled.div`
   align-items: center;
   color: white;
 
-  animation: move 10s infinite linear;
+  /* animation: move 10s infinite linear;
   animation-duration: 10s;
 
   @keyframes move {
@@ -65,11 +65,11 @@ export const HeroContent = styled.div`
     to {
       left: 100%;
     }
-  }
+  } */
 `;
 
 export const HeroH1 = styled.h1`
-  font-size: 60px;
+  /* font-size: 60px;
   display: flex;
   justify-content: flex-start;
   text-shadow: 5px 5px 10px #356489;
@@ -78,15 +78,15 @@ export const HeroH1 = styled.h1`
   ${mobile({
     fontSize: "40px",
     width: "500px",
-  })}
+  })} */
 `;
 export const HeroName = styled.span`
-  width: 100%;
+  /* width: 100%;
   font-size: 40px;
   text-align: center;
   font-weight: 300;
   text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
-    0 0 3px rgba(255, 255, 255, 0.3);
+    0 0 3px rgba(255, 255, 255, 0.3); */
 `;
 export const HeroDownBtnrapper = styled.div`
   width: 50px;

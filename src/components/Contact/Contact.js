@@ -13,6 +13,7 @@ import {
   WebsiteRights,
 } from "./ContactStyles";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -21,21 +22,26 @@ const Contact = () => {
         <Left>
           <TitleH1>About Me</TitleH1>
           <SpanTag>
-            Hi! My name is Ibrahim Doba and I am a junior developer. I have been
-            coding for more then 3 years. During my studies, I gained experience
-            in a variety of programming languages including: <br /> Javascript,
-            React Framework, Tailwind and more. <br /> I am excited to join the
-            team and contribute my skills and knowledge to the company. I am
-            eager to learn and grow as a developer, and I believe that this
-            opportunity will provide me with the perfect platform to do so. <br/> In
-            my free time, I enjoy coding challenges, building projects and participating in coding events.<br/> I am a strong team
-            player and am always looking for ways to collaborate and improve
-            upon my work. I am looking forward to being a part of a team and
-            working on exciting projects and making a difference together.
+            Hi! My name is Ibrahim Doba and I'm a Intermediate frontend developer
+            with a passion for creating user-friendly and visually appealing
+            websites. I have experience with HTML, CSS, JavaScript, tailwind, firebase and various
+            frontend frameworks such as React and Vue.js. <p /> I'm constantly
+            learning and experimenting with new technologies to improve my
+            skills and stay up-to-date with the latest trends in web
+            development.<p/> In my free time, I enjoy exploring new design concepts
+            and experimenting with different color palettes to create
+            aesthetically pleasing interfaces.<p/> I also have experience working in
+            a team environment and understand the importance of communication,
+            collaboration, and the agile development process. <p/>My goal is to use
+            my skills and creativity to develop innovative and responsive web
+            applications that provide a seamless user experience.<p/> I'm excited
+            about the opportunity to work with like-minded individuals and
+            contribute to the growth of any organization I'm a part of.
           </SpanTag>
         </Left>
         <Right>
           <ContactH1>Contact Me Here!</ContactH1>
+          <ContactForm/>
           <SocialMediaWrap>
             <SocialIcons>
               <SocialIconLinks

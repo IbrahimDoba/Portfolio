@@ -18,7 +18,7 @@ export const SkillTitle = styled.h1`
   font-size: 25px;
 `;
 export const Skillimg = styled.img`
-  height: 220px;
+  height: 130px;
   z-index: 1;
   object-fit: cover;
   opacity: 0;
@@ -31,14 +31,14 @@ export const SkillContainer = styled.div`
   align-items: center;
   position: relative;
   flex: 1;
-  height: 45vh;
-  min-width: 480px;
+  height: 42vh;
+  min-width: 360px;
   opacity: 1;
   z-index: 3;
-  background-color: black;
+  background-color: #1d1d1d;
 
   &:hover {
-    background-color: #f5fbfd;
+    /* background-color: #f5fbfd; */
     transition: all 1s ease;
   }
 
@@ -66,5 +66,7 @@ export const SkillCard = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   position: absolute;
-  /* background-color: black; */
-`;
+  width: 85%;
+  height: 85%;
+  background-color: #848884;
+`; 

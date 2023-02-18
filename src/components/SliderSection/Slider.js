@@ -2,6 +2,7 @@ import React from "react";
 import {
   BtnWrapper,
   IconStyles,
+  SButton,
   SContainer,
   SImg,
   SImgWrapper,
@@ -12,6 +13,7 @@ import {
 import { FiLink } from "react-icons/fi";
 import { IconContext } from "react-icons";
 
+
 const Slider = ({
   img,
   desc,
@@ -20,6 +22,11 @@ const Slider = ({
   descBg,
   btnTextBg,
   linkBg,
+  skills1,
+  skills2,
+  skills3,
+  skills4,
+  skills5,
 }) => {
   return (
     <SliderContainers bg={bg} id="portfolio">
@@ -38,8 +45,12 @@ const Slider = ({
             </a>
           </SWrapper>
           <BtnWrapper>
-            {/* <SButton>HTML</SButton>
-            <SButton>CSS</SButton> */}
+            <SButton>{skills1}</SButton>
+            <SButton>{skills2}</SButton>
+        {skills3 === "" ? null : <SButton>{skills3}</SButton>  }   
+        {skills4 === "" ? null : <SButton>{skills4}</SButton>  }   
+        {skills5 === "" ? null : <SButton>{skills5}</SButton>  }   
+            {/* <SButton>CSS</SButton> */}
           </BtnWrapper>
         </SContainer>
       </IconContext.Provider>

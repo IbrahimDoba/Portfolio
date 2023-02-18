@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import {
+  sliderDataFive,
+  sliderDataFour,
   sliderDataOne,
-  sliderDataThree,
-  sliderDataTwo,
+  sliderDataSix,
+
 } from "./SliderSection/SliderData";
 import Slider from "./SliderSection/Slider";
 import { useState } from "react";
@@ -12,9 +14,7 @@ import { Arrow } from "./SliderSection/SliderStyles";
 
 const Container = styled.div`
   position: relative;
-  overflow: hidden; 
-
- 
+  overflow: hidden;
 `;
 
 const Wrapper = styled.div`
@@ -30,28 +30,29 @@ const SliderPages = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
 
   const handleClick = (direction) => {
-    console.log("working", handleClick);
     if (direction === "left") {
-      setSliderIndex(sliderIndex > 0 ? sliderIndex - 1 : 2);
+      setSliderIndex(sliderIndex > 0 ? sliderIndex - 1 :3);
     } else {
-      setSliderIndex(sliderIndex < 2 ? sliderIndex + 1 : 0);
+      setSliderIndex(sliderIndex < 3 ? sliderIndex + 1 : 0);
     }
   };
+  console.log(sliderIndex);
 
   return (
-    <Container >
+    <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        <AiOutlineArrowLeft />
+        <AiOutlineArrowLeft size={60} />
       </Arrow>
       <Wrapper sliderIndex={sliderIndex}>
+        <Slider {...sliderDataSix} />
+        <Slider {...sliderDataFour} />
+        <Slider {...sliderDataFive} />
         <Slider {...sliderDataOne} />
-
-        <Slider {...sliderDataTwo} />
-
-        <Slider {...sliderDataThree} />
+        {/* <Slider {...sliderDataTwo} /> */}
+        {/* <Slider {...sliderDataThree} /> */}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-        <AiOutlineArrowRight />
+        <AiOutlineArrowRight size={60} />
       </Arrow>
     </Container>
   );

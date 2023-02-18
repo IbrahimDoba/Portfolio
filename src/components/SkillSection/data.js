@@ -11,6 +11,11 @@ export const skillss = [
         titles: "CSS",
     },
     {
+        id: 7,
+        img: require("../../images/tailwind.png") ,
+        titles: "TAILWIND",
+    },
+    {
         id: 3,
         img: require("../../images/javascript.png"),
         titles:"JAVASCRIPT",
@@ -29,5 +34,20 @@ export const skillss = [
         id: 6,
         img: require("../../images/Firebase.png") ,
         titles: "FIREBASE",
+    },
+    {
+        id: 8,
+        img: require("../../images/nodee.png") ,
+        titles: "NODE",
+    },
+    {
+        id: 8,
+        img: require("../../images/rest.png") ,
+        titles: "REST API",
+    },
+    {
+        id: 8,
+        img: require("../../images/github.png") ,
+        titles: "GITHUB",
     },
 ]
