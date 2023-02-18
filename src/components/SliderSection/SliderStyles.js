@@ -29,6 +29,12 @@ export const Arrow = styled.div`
     color: red;
     font-size: 3rem;
   }
+
+  ${mobile({
+  width: "60px",
+  fontSize: '1.3rem',
+  height: "20px"
+  })}
 `;
 
 export const SContainer = styled.div`
@@ -39,6 +45,10 @@ export const SContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   overflow-x: hidden;
+
+  ${mobile({
+  height: "100%",
+  })}
 `;
 
 export const SImg = styled.img`
@@ -51,8 +61,11 @@ export const SImg = styled.img`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   transition: scale 1s ease-in-out;
+
+  ${mobile({
+  height: '50%',
+})}
 `;
 
 export const IconStyles = styled.div`
@@ -92,7 +105,7 @@ export const SImgWrapper = styled.div`
 
   ${mobile({
    maxWidth: "320px",
-   
+   height: "100%",
   })}
 `;
 export const SWrapper = styled.div`
@@ -113,7 +126,7 @@ export const STitle = styled.h1`
   font-weight: 300;
   margin-bottom: 40px;
   ${mobile({
-    fontSize: "24px",
+    fontSize: "20px",
   })}
 `;
 export const BtnWrapper = styled.div`
@@ -121,6 +134,11 @@ export const BtnWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 50%;
+  ${mobile({
+    flexDirection: "row",
+    flexWrap: 'wrap',
+    width: "60%",
+})}
 `;
 export const SButton = styled.button`
   padding: 15px;
@@ -131,4 +149,10 @@ export const SButton = styled.button`
   color: white;
   font-size: 22px;
   width: 100%;
+  ${mobile({
+    fontSize: "15px",
+    width: "50%",
+    padding: "10px",
+    margin: '5px',
+  })}
 `;

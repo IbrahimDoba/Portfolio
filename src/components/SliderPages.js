@@ -41,7 +41,7 @@ const SliderPages = () => {
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        <AiOutlineArrowLeft size={60} />
+        <AiOutlineArrowLeft size={50} />
       </Arrow>
       <Wrapper sliderIndex={sliderIndex}>
         <Slider {...sliderDataSix} />
@@ -52,7 +52,7 @@ const SliderPages = () => {
         {/* <Slider {...sliderDataThree} /> */}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-        <AiOutlineArrowRight size={60} />
+        <AiOutlineArrowRight size={50} />
       </Arrow>
     </Container>
   );

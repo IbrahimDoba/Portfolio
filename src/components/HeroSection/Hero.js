@@ -1,15 +1,15 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import codevideo from "../../videos/codevid.mp4";
-import Typed from "react-typed";
 import "./Hero.css";
+import { Typewriter } from "react-simple-typewriter";
 import {
   HeroBg,
   HeroContainer,
   HeroContent,
+  HeroH1,
+  HeroName,
   VideoBg,
 } from "./HeroStyles";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const Hero = () => {
   const [showText, setShowText] = useState(false);
@@ -17,7 +17,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowText(true);
-    }, 4800);
+    }, 3300);
     return () => clearTimeout(timer);
   }, []);
 
@@ -27,22 +27,25 @@ const Hero = () => {
         <VideoBg autoPlay loop muted src={codevideo} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <Typed
-          className="HeroH1"
-          typeSpeed={180}
-          backSpeed={110}
-          strings={["FRONTEND-DEVELOPER", ]}
-        />
-
-        {showText && (
-          <Typed
-            className="HeroName"
-            typeSpeed={120}
-            backSpeed={140}
-            strings={["IBRAHIM DOBA"]}
-            
+        <HeroH1>
+          <Typewriter
+            className="HeroH1"
+            typeSpeed={150}
+            deleteSpeed={110}
+            words={["FRONTEND-DEVELOPER"]}
+            loop={1}
           />
-        )}
+        </HeroH1>
+        <HeroName>
+          {showText && (
+            <Typewriter
+              className="HeroName"
+              typeSpeed={120}
+              deleteSpeed={140}
+              words={["IBRAHIM DOBA"]}
+            />
+          )}
+        </HeroName>
       </HeroContent>
     </HeroContainer>
   );

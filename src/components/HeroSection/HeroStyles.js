@@ -48,12 +48,12 @@ export const HeroContent = styled.div`
   max-width: 700px;
   width: 100%;
   position: absolute;
-  padding: 8px 24px;
+  /* padding: 8px 24px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: 		#F9F6EE;
 
   /* animation: move 10s infinite linear;
   animation-duration: 10s;
@@ -69,24 +69,32 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  /* font-size: 60px;
+  font-size: 60px;
   display: flex;
+  text-align: center;
   justify-content: flex-start;
   text-shadow: 5px 5px 10px #356489;
   font-weight: 500;
 
   ${mobile({
-    fontSize: "40px",
-    width: "500px",
-  })} */
+    fontSize: "20px",
+    width: "300px",
+    textAlign: "center"
+  })}
 `;
 export const HeroName = styled.span`
-  /* width: 100%;
+  width: 100%;
   font-size: 40px;
   text-align: center;
   font-weight: 300;
   text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
-    0 0 3px rgba(255, 255, 255, 0.3); */
+    0 0 3px rgba(255, 255, 255, 0.3);
+
+    ${mobile({
+    fontSize: "20px",
+    width: "300px",
+    textAlign: "start"
+  })}
 `;
 export const HeroDownBtnrapper = styled.div`
   width: 50px;

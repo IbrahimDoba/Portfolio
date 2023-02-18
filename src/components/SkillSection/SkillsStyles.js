@@ -16,6 +16,10 @@ export const SkillTitle = styled.h1`
   transition: all 0.2s ease;
   cursor: pointer;
   font-size: 25px;
+
+  ${mobile({
+    fontSize: "15px",
+  })}
 `;
 export const Skillimg = styled.img`
   height: 130px;
@@ -23,6 +27,10 @@ export const Skillimg = styled.img`
   object-fit: cover;
   opacity: 0;
   transition: all 0.5s ease;
+
+  ${mobile({
+    height: "70px",
+  })}
 `;
 
 export const SkillContainer = styled.div`
@@ -53,7 +61,8 @@ export const SkillContainer = styled.div`
     opacity: 0;
   }
   ${mobile({
-    minWidth: "300px",
+    minWidth: "150px",
+    height: "32vh"
   })}
  
 `;
