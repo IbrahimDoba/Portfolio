@@ -12,8 +12,10 @@ import {
   TitleH1,
   WebsiteRights,
 } from "./ContactStyles";
-import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub,  FaTwitter, FaLinkedin } from "react-icons/fa";
+import {CgMail} from "react-icons/cg"
 import ContactForm from "./ContactForm";
+
 
 const Contact = () => {
   return (
@@ -52,11 +54,11 @@ const Contact = () => {
                 <FaGithub />
               </SocialIconLinks>
               <SocialIconLinks
-                href="https://www.instagram.com/ib_dobaa/"
+                href="mailto:ibrahimdoba55@gmail.com"
                 target="_blank"
                 aerial-label="Instagram"
               >
-                <FaInstagram />
+                <CgMail />
               </SocialIconLinks>
               <SocialIconLinks
                 href="https://twitter.com/DobaIbrahim"
