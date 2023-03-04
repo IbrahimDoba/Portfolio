@@ -1,6 +1,5 @@
 import { React, useState, useEffect } from "react";
 import codevideo from "../../videos/codevid.mp4";
-import "./Hero.css";
 import { Typewriter } from "react-simple-typewriter";
 import {
   HeroBg,
