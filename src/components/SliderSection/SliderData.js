@@ -39,7 +39,7 @@ export const sliderDataFour = {
 export const sliderDataFive = {
   img: require("../../images/moviesite.png"),
   desc: "Movie site displaying latest movies and series from themoviedb Api",
-  gitlink: "silvermoviesite.netlify.app",
+  gitlink: "https://silvermoviesite.netlify.app",
   skills1: "React", 
   skills2: "Styled-Comp", 
   skills3: "", 
