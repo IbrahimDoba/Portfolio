@@ -133,11 +133,12 @@ export const BtnWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
+  width: 100%;
   ${mobile({
-    flexDirection: "row",
+    // flexDirection: "row",
     flexWrap: 'wrap',
-    width: "60%",
+    // width: "60%",
+    
 })}
 `;
 export const SButton = styled.button`
@@ -148,10 +149,11 @@ export const SButton = styled.button`
   background-color: black;
   color: white;
   font-size: 22px;
-  width: 100%;
+  width: 230px;
+  flex-wrap: wrap;
   ${mobile({
-    fontSize: "15px",
-    width: "50%",
+    fontSize: "12px",
+     width: "100px",
     padding: "10px",
     margin: '5px',
   })}
